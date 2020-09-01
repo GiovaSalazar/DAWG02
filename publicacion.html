@@ -2,10 +2,13 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Publicación de un sitio web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
+    <div>
 	<header>
         	<div class="slider">
         		<ul>
@@ -18,49 +21,50 @@
         			<li>
         				<img src="img/header3.gif" width="1000" height="250" alt="header3"/> 
         			</li>
+                    <li>
+                        <img src="img/header4.jpg" width="1000" height="250" alt="header3"/> 
+                    </li>
         		</ul>
         	</div>
         </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sistemas de control de versiones</a></li>
+                <li><a href="instalacion.html">Instalación de GIT para Windows</a></li>
+                <li><a href="publicacion.html">Publicación de un sitio web en GitHub</a></li>
+            </ul>
+        </nav>
         <section> 
             <h1>Publicación de un sitio web utilizando GitHub como servidor</h1>
             <article>
-            	<p>Antes que nada para poder utilizar los beneficios GitHub se debe tener creada una cuenta la cual la crearemos en el sitio oficial<b><a href="https://github.com/join" target="_blank">Enlace de login</a></b>, ademas tener instalado GIT para Windows.</p><br>
+            	<p>Antes que nada para poder utilizar los beneficios GitHub se debe tener creada una cuenta la cual la crearemos en el sitio oficial <b><a href="https://github.com/join" target="_blank">Enlace de login</a></b>, ademas tener instalado GIT para Windows.</p><br>
             	<p>Una vez creada la cuenta seleccionamos la opcion de crear repositorio que nos dirigira hacia esta ventana:</p><br>
-            	<img class="centrado" src="img/img17.jpg" width="500" height="300"><br>
+            	<img class="centrado" src="img/img17.png" width="500" height="300"><br>
             	<p>En esta parte elegimos un nombre para el repositorio y como forma opcional podemos agregar una descripción para dicho repositorio, luego dejamos por defecto "public" lo cual significa que nuestro repositorio será visto por todos (la opción "private" es solo para personas que han pagado una suscripción y no todos podrán verlo) por ultimo damos click en "create repository".</p><br>
             	<p>Nos quedará creado el repositorio asi como muestra la imagen</p><br>
             	<img class="centrado" src="img/img18.jpg" width="500" height="300"><br>
             	<p>2. Ahora nos dirigimos a la consola de GIT para ello en el buscador de Windows escribimos git y selecionamos el programa. </p><br>
-            	<img class="centrado" src="img/img19.png" width="500" height="300"><br>
+            	<img class="centrado" src="img/img19.jpg" width="500" height="300"><br>
             	<p>3. En esta consola digitaremos los comandos necesarios para subir los archivos deseados al repositorio. Como primer comando digitaremos "cd" y la ubicación de la carpeta que contiene los archivos y luego digitamos "dir" para verificar que esten todos los archivos deseados</p><br>
             	<img class="centrado" src="img/img20.jpg" width="500" height="300"><br>
-            	<p>4. Acontinuación seleccionamos el editor de texto por defecto para Git y luego por defecto dejamos la opción marcada "use OpenSSH"</p><br>
-            	<img class="centrado" src="img/img6.jpg" width="500" height="300"><br><br>
-            	<img class="centrado" src="img/img7.jpg" width="500" height="300"><br><br>
-            	<p>7. Dejamos la opción marcada por defecto la cual es OpenSSL como capa de transporte, salvo que se se trate de una red corporativa con dominio y certificados propios.</p><br>
-            	<img class="centrado" src="img/img8.jpg" width="500" height="300"><br>
-            	<p>8. En el siguiente paso se debe configurar el modo de checkout/commit. Por defecto se hace el checkout estilo Windows (se convierte LF a CRLF cuando se hace checkout de archivos de texto y viseversa al momento de commit) Git implementa esta conversión para poder visualizar correctamente los saltos de línea en Windows. Se puede optar por otra convención según se requiera.</p><br>
-            	<img class="centrado" src="img/img9.jpg" width="500" height="300"><br>
-            	<p>9. Seleccionamos Mintty el cual nos permitirávpoder utilizar Git Bash.</p><br>
-            	<img class="centrado" src="img/img10.png" width="500" height="300"><br>
-            	<p>10. Luego seleccionamos la "GIT credential manager" que es la que nos aparece por defecto.</p><br>
-            	<img class="centrado" src="img/img12.jpg"><br>
-            	<p>11. Acontinuación vienen unas opciones adicionales experimentales que si deseamos podemos habilitar, sino damos click en siguiente.</p><br>
-            	<img class="centrado" src="img/img13.jpg" width="500" height="300"><br><br>
-            	<img class="centrado" src="img/img14.jpg" width="500" height="300"><br>
-            	<p>12. Esperamos a que finalice la instalación y despues seleccionamos siguiente lo cual significa que hemos finalizado la instalación.</p><br>
-            	<img class="centrado" src="img/img15.jpg" width="500" height="300"><br><br>
-            	<img class="centrado" src="img/img16.jpg" width="500" height="300"><br>
+            	<p>4. Luego iniciamos GIT y hacemos un commit con los comandos " git init", "git add ." y "git commit -m "mi primer commit"".</p><br>
+            	<img class="centrado" src="img/img21.jpg" width="500" height="300"><br><br>
+            	<img class="centrado" src="img/img22.jpg" width="500" height="300"><br><br>
+            	<p>5. Acontinuación digitamos el comando "git remote origin" seguido por el enlace que se nos da al crear el repositorio y es ahi donde subiremos todos los archivos deseado.</p><br>
+            	<img class="centrado" src="img/img23.jpg" width="500" height="300"><br>
+            	<p>6. Luego digitamos el comando "git push origin master" para poder subir todos los archivos, pueda que en este paso nos pida ingresar nuestras credenciales como el user name y la contraseña y finalmente se habrán subido todos los archivos.</p><br>
+            	<img class="centrado" src="img/img24.jpg" width="500" height="300"><br>
+            	<p>7. Como se puede observar en la imagen todos los archivos se han subido, luego buscamos "branch master" y ahi creamos una nueva rama con el nombre de "gh-pages", despues nos dirigimos a "settings" en la parte superior derecha</p><br>
+            	<img class="centrado" src="img/img25.jpg" width="500" height="300"><br>
+            	<p>8. Luego buscamos "branches" en la lista izquierda y luego seleccionamos "master" que dentro estará la nueva rama creada anteriormente, seleccionamos esa rama.</p><br>
+            	<img class="centrado" src="img/img26.jpg" width="500" height="300"><br>
+            	<p>Por ultimo aceptamos la condicion y damos click en "update"</p><br>
+            	<img class="centrado" src="img/img27.jpg" width="500" height="300"><br><br>
             </article>
         </section>
-        <aside>
-                    <p id="cn">Contenido Relacionado</p>
-                    <p></p><a href="http://www.ejemplocodigo.com">www.ejemplocodigo.com</a>
-        </aside>
         <footer>
-                
-
+            <p>Desarrollado por Giovanni Salazar. Derechos reservados &#169;</p>
         </footer>
-
+    </div>
 </body>
 </html>

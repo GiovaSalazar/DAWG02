@@ -20,9 +20,9 @@ h1{
 
 p{
     font-family: 'Bebas Neue', cursive;
-font-family: 'Dosis', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 3px;
     font-size: 17px;
     font-weight: bold;
@@ -43,33 +43,54 @@ header {
 }
 
 section {
-    width: 79%;
+    width: 70%;
     background: #ccc;
-    float: left;
     overflow: auto;
     padding: 30px 15px 60px 15px; 
-    /*padding-bottom: 60px;
-    padding-top:30px;
-    padding-right: 10px;
-    padding-left: 10px;*/
+    margin: 0px auto;
+    box-shadow: -10px 10px 15px #888888, 10px 10px 15px #888888;
 }
 
-aside {
-    float: right;
-    border: 5px solid red;
-    width: 18%;
-    text-align: center;
-    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
-    /*visibility: hidden;*/
+nav ul{
+    list-style-type: none;
 }
-#cn{
+
+nav li a{
+    line-height: 2.5em;
+     display: block;
+    float: left;
+    width: 33.33%;
+    height: 40px;
+    background-color: green;
     text-align: center;
+      font-family: 'Bebas Neue', cursive;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    box-shadow: 0px 5px 5px #888888, 0px 5px 5px #888888;
+}
+
+nav a{
+    color: #DAA520;
+    padding: 0 2 .5em;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a:hover{
+    background: #6B8E23;
 }
 
 footer {
     position: relative;
     margin-top: -50px;
-    height: 50px; 
+    height: 60px; 
     padding:5px 0px;
     clear: both;
     background: #286af0;
@@ -77,15 +98,14 @@ footer {
     color: #fff;
 }
 
-figure {
-    display: table; margin: 0 auto;
+footer p{
+    text-align: center;
 }
 
 .slider {
     width: 100%;
     margin: auto;
     overflow: hidden;
-    text-align: center;
 }
 
 .slider ul {
@@ -100,10 +120,10 @@ figure {
     list-style: none;
 }
 
-.slider img {
+/*.slider img {
  width: 400%;
     
-}
+}*/
 
 @keyframes cambio {
     0% {margin-left: 0;}
@@ -123,3 +143,7 @@ figure {
     margin: 10px auto;
     display: block;
 }
+
+
+
+
