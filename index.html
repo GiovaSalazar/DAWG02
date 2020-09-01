@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Investigación aplicada</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	 <!-- Cabecera -->
+        <header>
+        	<div class="slider">
+        		<ul>
+        			<li>
+        				<img src="img/header.jpg" width="1000" height="250" alt="header"/> 
+        			</li>
+        			<li>
+        				<img src="img/header2.png" width="1000" height="250" alt="header2"/> 
+        			</li>
+        			<li>
+        				<img src="img/header3.gif" width="1000" height="250" alt="header3"/> 
+        			</li>
+        		</ul>
+        	</div>
+        </header>
+        <section> 
+            <h1>Sistemas de Control de Versiones</h1>
+            <article>
+            	<p>El sistema de control de versiones es un sistema que registra los cambios realizados sobre un archivo o conjunto de archivos a lo largo del tiempo de tal manera que sea posible recuperar versiones especificas más adelante.</p><br>
+            	<p>Existe una clasificación de estos sistemas los cuales son de tres tipos: Sistemas de Control de Versiones Locales, Centralizados y Distribuidos.</p>
+            </article>
+            <article>
+            	<h1>Sistemas de Control de Versiones Locales</h1>
+            	<p>Estos sistemas en vez de mantener las versiones como archivos independientes, los almacenaban en una base de datos. Cuando era necesario revisar una versión anterior del proyecto se usaba el sistema de control de versiones en vez de acceder directamente al archivo, de esta manera en cualquier momento solo se tenia una copia del proyecto, eliminando la posibilidad de confundir o eliminar versiones.</p><br>
+            	<p>En este punto el control de versiones se llevaba a cabo en el computador de cada uno de los desarrolladores y no existía una manera eficiente de compartir el código entre ellos.</p>
+            	<img class="centrado" src="img/LVC.jpg">
+            </article>
+            <article>
+            	<h1>Sistemas de Control de Versiones Centralizados</h1>
+            	<p>Para facilitar la colaboración de múltiples desarrolladores en un solo proyecto los sistemas de control de versiones evolucionaron: en vez de almacenar los cambios y versiones en el disco duro de los desarrolladores, estos se almacenaban en un servidor.</p><br>
+            	<p>En estos sistemas se abordó este problema impidiendo que los usuarios invalidaran el trabajo de los demás. Si dos personas editaban el mismo archivo y se presentaba un conflicto alguien debía solucionar este problema de manera manual y el desarrollo no podía continuar hasta que todos los conflictos fueran resueltos y puestos a disposición del resto del equipo.</p><br>
+            	<p>Esta solución funcionó en proyectos que tenían relativamente pocas actualizaciones y por ende pocos conflictos pero resulto muy engorroso para proyectos con docenas de contribuyentes activos que realizaban actualizaciones a diario.</p>
+            	<img class="centrado" src="img/CVC.jpg">
+            </article>
+            <article>
+            	<h1>Sistemas de Control de Versiones Distribuidos</h1>
+            	<p>La siguiente generación de estos sistemas se alejo de la idea de un solo repositorio centralizado y optó por darle a cada desarrollador una copia local de todo el proyecto, de esta manera se construyo una red distribuida de repositorios, en la que cada desarrollador podía trabajar de manera aislada pero teniendo un mecanismo de resolución de conflictos mucho más elegante que un su versión anterior.</p><br>
+            	<p>Al no existir un repositorio central, cada desarrollador puede trabajar a su propio ritmo, almacenar los cambios a nivel local y mezclar los conflictos que se presenten solo cuando se requiera. Cómo cada usuario tiene una copia completa del proyecto el riesgo por una caída del servidor, un repositorio dañado o cualquier otro tipo de perdida de datos es mucho menor que en cualquiera de sus predecesores.</p>
+            	<img class="centrado" src="img/DVC.jpg">
+            </article>
+        </section>
+
+        <aside>
+                    <p id="cn">Contenido Relacionado</p>
+                    <p></p><a href="http://www.ejemplocodigo.com">www.ejemplocodigo.com</a>
+        </aside>
+        <footer>
+                
+
+        </footer>
+
+</body>
+</html>

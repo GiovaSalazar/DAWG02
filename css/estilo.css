@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@500&family=Montserrat:ital,wght@1,400;1,900&family=Raleway:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height:100%;
+}
+
+h1{
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p{
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: justify;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+header {
+        
+    display:block;
+    background:#286af0;
+    padding:10px 0px;
+    text-align: center;
+}
+
+section {
+    width: 79%;
+    background: #ccc;
+    float: left;
+    overflow: auto;
+    padding: 30px 15px 60px 15px; 
+    /*padding-bottom: 60px;
+    padding-top:30px;
+    padding-right: 10px;
+    padding-left: 10px;*/
+}
+
+aside {
+    float: right;
+    border: 5px solid red;
+    width: 18%;
+    text-align: center;
+    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+    /*visibility: hidden;*/
+}
+#cn{
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    margin-top: -50px;
+    height: 50px; 
+    padding:5px 0px;
+    clear: both;
+    background: #286af0;
+    text-align: center;
+    color: #fff;
+}
+
+figure {
+    display: table; margin: 0 auto;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slider ul {
+    display: inline-flex;
+    padding: 0;
+    width: 100%;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+ width: 400%;
+    
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.centrado{
+    margin: 10px auto;
+    display: block;
+}
